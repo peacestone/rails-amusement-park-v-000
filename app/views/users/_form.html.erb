@@ -1,0 +1,24 @@
+<%= form_for(user) do |t| %>
+  <div class="field">
+    <%= t.label :name  %> <br>
+    <%= t.text_field :name %>
+  </div>
+  <div class="field">
+  <%= t.label :height %> <br>
+  <%= t.text_field :height %>
+  </div>
+  <%= t.label :happiness %>
+  <%= t.text_field :happiness %>
+  <%= t.label :nausea %>
+  <%= t.text_field :nausea %>
+  <%= t.label :tickets %>
+  <%= t.text_field :tickets %>
+  <%= t.label :password %>
+  <%= t.text_field :password %>
+  <div class="checkbox">
+    <%= t.label :admin? %>
+    <%= t.check_box :admin? %>
+    
+  </div>
+  <%= t.submit "Create User" %>
+ <%end%>
