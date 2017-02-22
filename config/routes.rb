@@ -9,6 +9,10 @@ Rails.application.routes.draw do
 
   post '/signin' => 'users#create_session', as: :create_session
 
+  delete '/signout' => 'users#destroy_session', as: :destroy_session
+
+  resources :attractions
+
 
 
 end
