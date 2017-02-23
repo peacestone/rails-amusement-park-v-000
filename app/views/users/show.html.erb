@@ -1,3 +1,10 @@
+  <% if flash %>
+    <% flash.each do |name, msg| -%>
+       <%= content_tag :div, msg, class: name %>
+     <% end -%>
+    <%end%>
+
+
 <%= @user.name %>
 <%= "ADMIN" if @user.admin? %>
 Mood <%= @user.mood if @user.nausea %>

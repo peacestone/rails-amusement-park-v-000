@@ -1,0 +1,5 @@
+<%= @attraction.name %> <br> <br>
+  <%= form_tag(rides_new_path) do %>
+    <%= hidden_field_tag(:attraction_id, params[:id]) %>
+    <%= submit_tag "Go on this ride" %>
+  <%end%>
